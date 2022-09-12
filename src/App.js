@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div >
+        <div className='main-page'>
           <TypeWriter id='intro' typing={1}>Hello I'm Tracy</TypeWriter>
           <img className='main-background' src={mainBackground}/>
         </div>
