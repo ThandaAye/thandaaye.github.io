@@ -24,6 +24,22 @@
   color: white;
 }
 
+#intro {
+  position:absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.main-background {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  pointer-events: none;
+  /* z-index: 0; */
+}
+
 .App-link {
   color: #61dafb;
 }
