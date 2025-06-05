@@ -11,11 +11,11 @@ function App() {
         <title>Thanda Aye @ Tracy| Portfolio</title>
         <nav class="navbar">
           <div class="container nav-container">
-            <div class="logo">Thanda Aye @ Tracy</div>
+            {/* <div class="logo">Thanda Aye @ Tracy</div> */}
             <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">ME</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
         </nav>
