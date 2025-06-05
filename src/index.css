@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: 'Poppins', fantasy;
   background: #232a35;
-  color: #ddd9d9;
+  color: #fff;
 }
 
 .container {
@@ -96,6 +96,113 @@ body {
   list-style: none;
   padding-left: 0;
   line-height: 1.6;
+}
+
+/* Work Experiences Section */
+.experience-timeline {
+  padding: 4rem 1rem;
+  background-color: #232a35;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.company {
+  display: block;
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.experience-duration {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.4rem;
+}
+
+.experience-details {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+
+/* Education Section */
+.education-timeline {
+  padding: 4rem 1rem;
+  background-color: #1a232e;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-timeline h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.timeline {
+  position: relative;
+  border-left: 3px solid #fff;
+  padding-left: 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', fantasy;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem; /* Increased from 1.5rem */
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.4rem; /* Adjusted to stay in line after padding change */
+  top: 0.35rem;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #007bff33;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0.2rem 0;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
 }
 
 /* Contact Section */
