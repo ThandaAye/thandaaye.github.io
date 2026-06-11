@@ -15,12 +15,6 @@ const Contact = () => {
             <span className="contact-card-value">tracy.thandaaye@gmail.com</span>
           </a>
 
-          <a href="tel:+14376608081" className="contact-card">
-            <span className="contact-card-icon">📞</span>
-            <span className="contact-card-label">Phone</span>
-            <span className="contact-card-value">+1 (437) 660-8081</span>
-          </a>
-
           <a
             href="https://linkedin.com/in/thandaaye"
             target="_blank"
