@@ -1,44 +1,88 @@
 import React from 'react';
 
+const skillGroups = [
+  {
+    icon: '🤖',
+    title: 'AI & LLM',
+    badges: ['LLMs', 'RAG', 'Spring AI', 'GitHub Copilot', 'Cursor', 'Claude Code', 'MCP Integrations'],
+  },
+  {
+    icon: '💻',
+    title: 'Languages',
+    badges: ['Java', 'Python', 'TypeScript', 'JavaScript', 'SQL'],
+  },
+  {
+    icon: '🎨',
+    title: 'Frontend',
+    badges: ['React.js', 'Redux', 'HTML5', 'CSS3'],
+  },
+  {
+    icon: '⚙️',
+    title: 'Backend & Frameworks',
+    badges: ['Spring Boot', 'Hibernate', 'Maven', 'Gradle', 'Node.js', 'NestJS', 'Express.js', 'FastAPI', 'REST APIs'],
+  },
+  {
+    icon: '☁️',
+    title: 'Cloud & Infrastructure',
+    badges: ['AWS', 'GCP', 'Cloudflare', 'IAM', 'VPC', 'Cognito', 'KMS', 'API Gateway', 'ECS', 'EKS', 'ECR', 'RDS', 'S3', 'Lambda', 'Step Functions', 'EventBridge'],
+  },
+  {
+    icon: '📊',
+    title: 'Data Engineering',
+    badges: ['Apache Spark', 'PySpark', 'Databricks', 'Snowflake', 'AWS Redshift', 'AWS Glue'],
+  },
+  {
+    icon: '📨',
+    title: 'Streaming & Messaging',
+    badges: ['Apache Kafka', 'Kinesis', 'RabbitMQ', 'Memcached', 'AWS SQS', 'AWS SNS'],
+  },
+  {
+    icon: '🗄️',
+    title: 'Databases',
+    badges: ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'Amazon DynamoDB'],
+  },
+  {
+    icon: '🚀',
+    title: 'DevOps & CI/CD',
+    badges: ['Docker', 'Kubernetes', 'Helm Charts', 'Terraform', 'Jenkins', 'Bitbucket Pipelines', 'SonarQube'],
+  },
+  {
+    icon: '📡',
+    title: 'Monitoring',
+    badges: ['Datadog', 'Grafana', 'Prometheus'],
+  },
+  {
+    icon: '🧪',
+    title: 'Testing & QA',
+    badges: ['Jest', 'JUnit', 'Mockito', 'Selenium', 'Cucumber', 'TDD', 'BDD'],
+  },
+  {
+    icon: '🛠️',
+    title: 'Methodologies & Tools',
+    badges: ['Agile', 'Scrum', 'SDLC', 'JIRA', 'Confluence', 'Git', 'Postman', 'Stripe Payments'],
+  },
+];
+
 const Skills = () => {
   return (
     <section className="skills-section">
       <div className="container">
-        <h2>Skills</h2>
+        <p className="section-label">// skills</p>
+        <h2 className="section-title">Technical Skills</h2>
+        <div className="section-divider" />
+
         <div className="skills-grid">
-          <div className="skill-card">
-            <h3>Data & Analytics</h3>
-            <ul>
-              <li>Python, Google OR-Tools</li>
-              <li>Optimization (scheduling, planning, inventory)</li>
-              <li>Machine Learning, Statistics, Probability</li>
-              <li>Data Modeling, Wrangling, Profiling</li>
-              <li>Predictive & Prescriptive Analysis</li>
-              <li>Data Warehousing (Redshift), ETL</li>
-              <li>Visualization: Excel, Tableau, Power BI</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <h3>Software Engineering</h3>
-            <ul>
-              <li>Java, Spring Boot, Maven, Hibernate</li>
-              <li>JavaScript, ReactJS, Ant Design</li>
-              <li>REST API, Springdoc-openapi, Postman</li>
-              <li>JUnit, Mockito, Selenium, SonarQube</li>
-              <li>MySQL, MongoDB</li>
-              <li>SDLC, Agile, CI/CD</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <h3>Cloud & DevOps</h3>
-            <ul>
-              <li>AWS, Docker, Kubernetes, Microservices</li>
-              <li>BitBucket, Git, JIRA, Confluence</li>
-              <li>Stripe Payment, Fiuu (Razer Payment)</li>
-            </ul>
-          </div>
+          {skillGroups.map((group) => (
+            <div className="skill-card" key={group.title}>
+              <span className="skill-card-icon">{group.icon}</span>
+              <h3>{group.title}</h3>
+              <div className="skill-badges">
+                {group.badges.map((badge) => (
+                  <span className="badge" key={badge}>{badge}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

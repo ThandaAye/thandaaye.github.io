@@ -10,16 +10,17 @@ function App() {
   return (
     <div>
       <header>
-        <title>Thanda Aye @ Tracy| Portfolio</title>
-        <nav class="navbar">
-          <div class="container nav-container">
-            {/* <div class="logo">Thanda Aye @ Tracy</div> */}
-            <ul class="nav-links">
-              <li><a href="#about">ME</a></li>
-              <li><a href="#skills">SKILLS</a></li>
-              <li><a href="#workexperiences">WORK EXPERIENCES</a></li>
-              <li><a href="#educations">EDUCATIONS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+        <nav className="navbar">
+          <div className="container nav-container">
+            <a href="#about" className="nav-logo">
+              <span>Tracy Thanda Aye</span>
+            </a>
+            <ul className="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -34,11 +35,11 @@ function App() {
           <Skills />
         </section>
 
-        <section id="workexperiences">
+        <section id="experience">
           <Workexperiences />
         </section>
 
-        <section id="educations">
+        <section id="education">
           <Educations />
         </section>
 
@@ -50,4 +51,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

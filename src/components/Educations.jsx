@@ -1,34 +1,49 @@
 import React from 'react';
 
+const degrees = [
+  {
+    degree: 'Master of Data Analytics',
+    school: 'University of Niagara Falls, Canada',
+    period: '2024 – 2026',
+  },
+  {
+    degree: 'Post Graduate Diploma in Systems Analysis',
+    school: 'National University of Singapore (NUS-ISS)',
+    period: '2015 – 2016',
+  },
+  {
+    degree: 'Bachelor of Engineering in Electronics',
+    school: 'Mandalay Technological University, Myanmar',
+    period: '2008 – 2013',
+  },
+];
+
 const Education = () => {
   return (
-    <section class="education-timeline">
-      <div class="timeline-title">Education</div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024 - 2026</div>
-          <div class="timeline-content">
-            <h3>Master of Data Analytics</h3>
-            <p>University of Niagara Falls Canada (UNF)</p>
-          </div>
+    <section className="education-section">
+      <div className="container">
+        <p className="section-label">// education</p>
+        <h2 className="section-title">Education</h2>
+        <div className="section-divider" />
+
+        <div className="edu-grid">
+          {degrees.map((edu) => (
+            <div className="edu-card" key={edu.degree}>
+              <p className="edu-degree">{edu.degree}</p>
+              <p className="edu-school">{edu.school}</p>
+              <p className="edu-period">{edu.period}</p>
+            </div>
+          ))}
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015 - 2016</div>
-          <div class="timeline-content">
-            <h3>Post Graduate Diploma in System Analysis</h3>
-            <p>National niversity of Singapore (NUS)</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2008 - 2013</div>
-          <div class="timeline-content">
-            <h3>Bachelor in Electronic Engineering</h3>
-            <p>Mandalay Technological University (MTU)</p>
+        <div className="additional-card">
+          <span className="additional-card-icon">🏅</span>
+          <div>
+            <h3>Mentor — SGInnovate PowerX Program</h3>
+            <p>
+              Mentored aspiring technologists in software engineering fundamentals and career
+              development through Singapore's national deep-tech talent initiative.
+            </p>
           </div>
         </div>
       </div>
