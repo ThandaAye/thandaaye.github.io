@@ -3,12 +3,12 @@ import React from 'react';
 const degrees = [
   {
     degree: 'Master of Data Analytics',
-    school: 'University of Niagara Falls, Canada',
+    school: 'University of Niagara Falls (UNF), Canada',
     period: '2024 – 2026',
   },
   {
     degree: 'Post Graduate Diploma in Systems Analysis',
-    school: 'National University of Singapore (NUS-ISS)',
+    school: 'National University of Singapore (NUS), Singapore',
     period: '2015 – 2016',
   },
   {
