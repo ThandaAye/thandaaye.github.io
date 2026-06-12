@@ -10,7 +10,7 @@ const Aboutme = () => {
           <strong>Software Engineer</strong> &amp; Technical Lead
         </p>
         <p className="hero-bio">
-          8+ years building fintech and financial services platforms across Singapore and Canada.
+          9 years building fintech and financial services platforms across Singapore and Canada.
           I embed with operations teams to surface painful workflows and ship end-to-end automation
           across trade finance, ESG compliance, and data engineering. Currently based in Toronto, ON.
         </p>

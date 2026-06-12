@@ -39,7 +39,7 @@ const skillGroups = [
   {
     icon: '🗄️',
     title: 'Databases',
-    badges: ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'Amazon DynamoDB'],
+    badges: ['MySQL', 'NoSQL', 'PostgreSQL', 'Redis', 'MongoDB', 'DynamoDB', 'Elasticsearch'],
   },
   {
     icon: '🚀',
